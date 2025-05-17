@@ -1,175 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wonkas Park</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="floating-button.css">
-</head>
-
-<body class="flex flex-col min-h-screen">
-
-  <!-- Header -->
-  <header class="bg-blue-600 text-white">
-    <nav class="container mx-auto flex items-center justify-between p-4">
-      <!-- Logo -->
-      <div class="text-2xl font-bold">
-        <a href="#" class="hover:text-gray-300">MiLogo</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parque Mágico - Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-purple-50 to-orange-50 min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-purple-200 text-black shadow-md">
+      <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+        <div class="flex items-center gap-3">
+          <img src="img/logo_parque.svg" alt="Logo Parque" class="w-8 h-8">
+          <h1 class="text-xl font-bold">Parque Mágico</h1>
+        </div>
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="index.html" class="text-orange-600 font-semibold">Inicio</a>
+          <a href="integrantes.html" class="hover:text-orange-600">Integrantes</a>
+          <a href="proyecto.html" class="hover:text-orange-600">Proyecto</a>
+          <a href="avances.html" class="hover:text-orange-600">Avances</a>
+          <a href="sitioproyecto.html" class="hover:text-orange-600">Sitio del Proyecto</a>
+        </nav>
+        <button class="md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
+    </header>
 
-      <!-- Menú desktop -->
-      <ul class="hidden md:flex space-x-8 text-lg">
-        <li><a href="#" class="hover:text-gray-300">Inicio</a></li>
-        <li><a href="#" class="hover:text-gray-300">Avances</a></li>
-        <li><a href="#" class="hover:text-gray-300">Proyecto</a></li>
-      </ul>
+    <!-- HERO -->
+    <section class="relative">
+      <img src="img/fondo_parque.jpg" alt="Parque Mágico" class="w-full h-[400px] object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+        <h2 class="text-white text-4xl font-bold">Bienvenidos al Parque Mágico</h2>
+      </div>
+    </section>
 
-      <!-- Botón menú móvil -->
-      <button id="btnMenu" class="md:hidden focus:outline-none" aria-label="Abrir menú">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </nav>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-5xl mx-auto py-12 px-4">
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-orange-600 mb-4">Propuesta principal</h3>
+        <p class="mb-2">Creamos un sitio web para promocionar nuestro parque temático, ofreciendo información sobre atracciones, horarios y entradas.</p>
+        <p class="mb-2">Nuestro objetivo es atraer visitantes mediante un diseño amigable, informativo y visualmente atractivo.</p>
+        <p>Buscamos impactar especialmente en familias, niños, jóvenes y turistas, utilizando redes sociales, influencers y promociones especiales.</p>
+      </section>
 
-    <!-- Menú móvil oculto por defecto -->
-    <ul id="menuMobile" class="hidden flex flex-col space-y-4 p-4 bg-blue-700 md:hidden">
-      <li><a href="#" class="block hover:text-gray-300">Inicio</a></li>
-      <li><a href="#" class="block hover:text-gray-300">Avances</a></li>
-      <li><a href="#" class="block hover:text-gray-300">Proyecto</a></li>
-    </ul>
-  </header>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Nombre del proyecto</h4>
+          <p>Parque Mágico</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Dominio del proyecto</h4>
+          <p>Publicado en GitHub Pages</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Eslogan</h4>
+          <p>“Donde la magia comienza”</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Logo</h4>
+          <img src="img/logo_parque.svg" alt="Logo" class="w-16">
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Paleta de colores</h4>
+          <div class="flex gap-2 mt-2">
+            <div class="w-10 h-10 rounded-full bg-purple-600"></div>
+            <div class="w-10 h-10 rounded-full bg-orange-400"></div>
+            <div class="w-10 h-10 rounded-full bg-white border"></div>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Árbol del sitio</h4>
+          <img src="img/arbol_sitio.png" alt="Mapa del sitio" class="w-64 mt-2">
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Prototipado</h4>
+          <p>
+            <a href="https://www.figma.com/" target="_blank" class="text-blue-600 underline">Ver en Figma</a>
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-purple-700">Roles de los integrantes</h4>
+          <ul class="list-disc list-inside">
+            <li>Diseñador UX/UI: Analia</li>
+            <li>Maquetador: Elizabeth</li>
+            <li>Programador: Pablo</li>
+            <li>Comunicador Web: Agustin</li>
+          </ul>
+        </div>
+      </section>
 
-  <!-- Main -->
-  <main class="flex-grow container mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-4">Bienvenido a Mi Proyecto</h1>
-    <p class="text-lg text-gray-700">
-      Esta es una maqueta responsive usando Tailwind CSS. Ajustá el tamaño de la ventana para ver cómo cambia el menú.
-    </p>
-    <br> <br>
-    <p class="text-lg text-gray-700">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis libero in nisl euismod laoreet. Curabitur
-      efficitur nisl in odio molestie egestas. Quisque ornare, diam non egestas placerat, erat ligula porta odio, sit
-      amet rutrum arcu nisl eget tortor. Proin massa lorem, posuere non sagittis non, blandit sed mauris. Curabitur mi
-      quam, ullamcorper in ornare non, auctor sed nibh. Nulla ut pretium dui. Duis auctor risus vel mauris lobortis
-      ultricies. Cras accumsan quam vehicula feugiat ultrices. Ut maximus augue vitae lorem pulvinar tincidunt.
+      
+    </main>
 
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam varius dictum enim
-      ac porttitor. Morbi sit amet justo molestie, facilisis ipsum eu, pharetra nunc. Donec nunc augue, fringilla a
-      fermentum a, condimentum nec ipsum. Nulla magna ante, facilisis eget nibh ac, vehicula iaculis risus. Etiam
-      vestibulum semper risus id dictum. Nulla eros nunc, auctor eget nisi ac, rutrum lacinia massa. Donec ornare risus
-      ac dapibus efficitur. Duis viverra, dolor eu hendrerit fermentum, nunc odio ornare tellus, quis congue sem eros in
-      felis. Sed eu viverra arcu, quis accumsan mauris. Maecenas efficitur mi non scelerisque pellentesque. Integer
-      varius odio ac leo imperdiet dignissim ac ut tellus.
-
-      Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vitae cursus est, at porta lacus.
-      Pellentesque lobortis porttitor arcu vel rhoncus. Suspendisse potenti. Curabitur aliquet lacinia scelerisque.
-      Aliquam erat volutpat. Cras sem arcu, suscipit non ligula porta, mattis lacinia sapien. Donec eleifend augue sed
-      hendrerit tempor. Curabitur vel neque quis dolor auctor viverra sed eget nunc.
-
-      Curabitur et ante dapibus, ullamcorper enim non, finibus sem. Vestibulum ante ipsum primis in faucibus orci luctus
-      et ultrices posuere cubilia curae; Praesent ligula sem, posuere eget leo ac, bibendum tristique erat. Morbi
-      ultrices interdum libero, eu facilisis elit tincidunt eget. Donec ex dolor, eleifend non ullamcorper nec,
-      malesuada sit amet nisi. Aenean nec ante eget lacus feugiat tincidunt ac a enim. Duis quis venenatis nunc.
-
-      In vehicula finibus ligula, id volutpat nisi pulvinar vitae. Sed dolor nulla, euismod in molestie in, ultricies
-      sed justo. Sed porta placerat odio vitae sollicitudin. Nam tempus lorem et condimentum convallis. Aenean dui
-      tortor, vestibulum eget ligula vel, rhoncus maximus dolor. Nam id purus quis massa tristique egestas. Sed ac
-      ullamcorper mauris, sit amet facilisis tortor.
-    </p>
-    <br> <br>
-    <p class="text-lg text-gray-700">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis libero in nisl euismod laoreet. Curabitur
-      efficitur nisl in odio molestie egestas. Quisque ornare, diam non egestas placerat, erat ligula porta odio, sit
-      amet rutrum arcu nisl eget tortor. Proin massa lorem, posuere non sagittis non, blandit sed mauris. Curabitur mi
-      quam, ullamcorper in ornare non, auctor sed nibh. Nulla ut pretium dui. Duis auctor risus vel mauris lobortis
-      ultricies. Cras accumsan quam vehicula feugiat ultrices. Ut maximus augue vitae lorem pulvinar tincidunt.
-
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam varius dictum enim
-      ac porttitor. Morbi sit amet justo molestie, facilisis ipsum eu, pharetra nunc. Donec nunc augue, fringilla a
-      fermentum a, condimentum nec ipsum. Nulla magna ante, facilisis eget nibh ac, vehicula iaculis risus. Etiam
-      vestibulum semper risus id dictum. Nulla eros nunc, auctor eget nisi ac, rutrum lacinia massa. Donec ornare risus
-      ac dapibus efficitur. Duis viverra, dolor eu hendrerit fermentum, nunc odio ornare tellus, quis congue sem eros in
-      felis. Sed eu viverra arcu, quis accumsan mauris. Maecenas efficitur mi non scelerisque pellentesque. Integer
-      varius odio ac leo imperdiet dignissim ac ut tellus.
-
-      Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vitae cursus est, at porta lacus.
-      Pellentesque lobortis porttitor arcu vel rhoncus. Suspendisse potenti. Curabitur aliquet lacinia scelerisque.
-      Aliquam erat volutpat. Cras sem arcu, suscipit non ligula porta, mattis lacinia sapien. Donec eleifend augue sed
-      hendrerit tempor. Curabitur vel neque quis dolor auctor viverra sed eget nunc.
-
-      Curabitur et ante dapibus, ullamcorper enim non, finibus sem. Vestibulum ante ipsum primis in faucibus orci luctus
-      et ultrices posuere cubilia curae; Praesent ligula sem, posuere eget leo ac, bibendum tristique erat. Morbi
-      ultrices interdum libero, eu facilisis elit tincidunt eget. Donec ex dolor, eleifend non ullamcorper nec,
-      malesuada sit amet nisi. Aenean nec ante eget lacus feugiat tincidunt ac a enim. Duis quis venenatis nunc.
-
-      In vehicula finibus ligula, id volutpat nisi pulvinar vitae. Sed dolor nulla, euismod in molestie in, ultricies
-      sed justo. Sed porta placerat odio vitae sollicitudin. Nam tempus lorem et condimentum convallis. Aenean dui
-      tortor, vestibulum eget ligula vel, rhoncus maximus dolor. Nam id purus quis massa tristique egestas. Sed ac
-      ullamcorper mauris, sit amet facilisis tortor.
-    </p>
-
-    <br> <br>
-    <p class="text-lg text-gray-700">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis libero in nisl euismod laoreet. Curabitur
-      efficitur nisl in odio molestie egestas. Quisque ornare, diam non egestas placerat, erat ligula porta odio, sit
-      amet rutrum arcu nisl eget tortor. Proin massa lorem, posuere non sagittis non, blandit sed mauris. Curabitur mi
-      quam, ullamcorper in ornare non, auctor sed nibh. Nulla ut pretium dui. Duis auctor risus vel mauris lobortis
-      ultricies. Cras accumsan quam vehicula feugiat ultrices. Ut maximus augue vitae lorem pulvinar tincidunt.
-
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam varius dictum enim
-      ac porttitor. Morbi sit amet justo molestie, facilisis ipsum eu, pharetra nunc. Donec nunc augue, fringilla a
-      fermentum a, condimentum nec ipsum. Nulla magna ante, facilisis eget nibh ac, vehicula iaculis risus. Etiam
-      vestibulum semper risus id dictum. Nulla eros nunc, auctor eget nisi ac, rutrum lacinia massa. Donec ornare risus
-      ac dapibus efficitur. Duis viverra, dolor eu hendrerit fermentum, nunc odio ornare tellus, quis congue sem eros in
-      felis. Sed eu viverra arcu, quis accumsan mauris. Maecenas efficitur mi non scelerisque pellentesque. Integer
-      varius odio ac leo imperdiet dignissim ac ut tellus.
-
-      Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vitae cursus est, at porta lacus.
-      Pellentesque lobortis porttitor arcu vel rhoncus. Suspendisse potenti. Curabitur aliquet lacinia scelerisque.
-      Aliquam erat volutpat. Cras sem arcu, suscipit non ligula porta, mattis lacinia sapien. Donec eleifend augue sed
-      hendrerit tempor. Curabitur vel neque quis dolor auctor viverra sed eget nunc.
-
-      Curabitur et ante dapibus, ullamcorper enim non, finibus sem. Vestibulum ante ipsum primis in faucibus orci luctus
-      et ultrices posuere cubilia curae; Praesent ligula sem, posuere eget leo ac, bibendum tristique erat. Morbi
-      ultrices interdum libero, eu facilisis elit tincidunt eget. Donec ex dolor, eleifend non ullamcorper nec,
-      malesuada sit amet nisi. Aenean nec ante eget lacus feugiat tincidunt ac a enim. Duis quis venenatis nunc.
-
-      In vehicula finibus ligula, id volutpat nisi pulvinar vitae. Sed dolor nulla, euismod in molestie in, ultricies
-      sed justo. Sed porta placerat odio vitae sollicitudin. Nam tempus lorem et condimentum convallis. Aenean dui
-      tortor, vestibulum eget ligula vel, rhoncus maximus dolor. Nam id purus quis massa tristique egestas. Sed ac
-      ullamcorper mauris, sit amet facilisis tortor.
-    </p>
-
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white p-4 text-center">
-    &copy; 2025 Wonkas Park. Todos los derechos reservados.
-  </footer>
-
-  <script>
-    // Toggle menú móvil
-    const btnMenu = document.getElementById('btnMenu');
-    const menuMobile = document.getElementById('menuMobile');
-
-    btnMenu.addEventListener('click', () => {
-      menuMobile.classList.toggle('hidden');
-    });
-  </script>
-
-  <!-- Boton flotante Comprar Entradas -->
-  <div id="floating-button">
-    <img src="imagen_entradas.png" alt="Comprar Entradas" style="width: 160px;">
-  </div>
-
-  <!-- Script para boton Comprar Entradas -->
-  <script src="floating-button.js"></script>
-
-
-</body>
-
+    <!-- FOOTER -->
+    <footer class="bg-purple-200 text-center text-sm p-4 text-gray-700">
+      <p>Equipo 1 - Diseño y Desarrollo Web - UADE - 2025 - Docente: PATRICIA LITOVICIUS</p>
+    </footer>
+  </body>
 </html>
