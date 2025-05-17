@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parque Mágico - Proyecto</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>body { font-family: 'Roboto', sans-serif; }</style>
-  </head>
-  <body class="bg-orange-50 flex flex-col items-center justify-center min-h-screen text-center">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parque Mágico - Proyecto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bg-purple-200 text-black shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <img src="img/logo.png" alt="Logo Parque" class="w-8 h-8">
+        <h1 class="text-xl font-bold">Parque Mágico</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="index.html" class="hover:text-orange-600">Inicio</a>
+        <a href="proyecto.html" class="hover:text-orange-600">Proyecto</a>
+        <a href="avances.html" class="hover:text-orange-600">Avances</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="construction-section">
     <img src="https://cdn-icons-png.flaticon.com/512/189/189792.png" alt="Construcción" class="w-24 h-24 mb-4">
     <h1 class="text-3xl font-bold text-orange-600 mb-2">Sitio en construcción</h1>
     <p class="text-gray-700">Estamos trabajando para traerte una experiencia mágica. ¡Próximamente!</p>
-  </body>
+  </main>
+
+  <footer>
+    <p>Equipo 1 - Diseño y Desarrollo Web - UADE - 2025 - Docente: PATRICIA LITOVICIUS</p>
+  </footer>
+</body>
 </html>
