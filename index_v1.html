@@ -19,17 +19,37 @@
 </head>
 <body class="bg-[#fdf3e7] text-gray-800">
 
-  <!-- NAVBAR -->
-  <header class="bg-[#fff5dd] px-8 py-4 flex justify-between items-center shadow-md">
+<!-- HEADER con diseño más claro -->
+<header class="bg-[#fff5dd] border-b border-[#f0e5cd]">
+  <div class="flex flex-wrap items-center justify-between px-6 py-2">
+    <!-- Logo -->
     <h1 class="titulo text-purple-800 text-2xl">WONKA’S PARK</h1>
-<nav id="menu" class="hidden md:flex flex-col md:flex-row md:items-center md:justify-end mt-4 md:mt-0 space-y-4 md:space-y-0 md:space-x-6 text-purple-700 font-medium">
-  <a href="index.html" class="hover:underline hover:text-purple-900 hover:scale-105 transition duration-200">Home</a>
-  <a href="avances.html" class="hover:underline hover:text-purple-900 hover:scale-105 transition duration-200">Avances</a>
-  <a href="proyecto.html" class="hover:underline hover:text-purple-900 hover:scale-105 transition duration-200">Proyecto</a>
-  <a href="#" class="bg-orange-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition duration-200">🎫 ENTRADAS</a>
-</nav>
+    <!-- Botón hamburguesa (solo en mobile) -->
+    <button id="menu-btn" class="md:hidden text-purple-800 text-3xl focus:outline-none">
+      <span id="menu-icon">☰</span>
+    </button>
 
-  </header>
+    <!-- Menú -->
+    <nav id="mobile-menu" class="hidden w-full mt-4 md:mt-0 md:flex md:w-auto flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 text-purple-700 font-medium">
+      <a href="index.html" class="text-purple-800 hover:underline hover:text-purple-900">Home</a>
+      <a href="avances.html" class="text-purple-800 hover:underline hover:text-purple-900">Avances</a>
+      <a href="proyecto.html" class="text-purple-800 hover:underline hover:text-purple-900">Proyecto</a>
+      <a href="#" class="bg-yellow-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition duration-200">🎫 ENTRADAS</a>
+    </nav>
+  </div>
+</header>
+
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.getElementById('menu-icon');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    icon.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+  });
+</script>
 
   <!-- HERO ILUSTRADO CON LOGO -->
 <section class="relative w-full max-h-[720px] overflow-hidden">
@@ -84,7 +104,7 @@
     <div>
       <h3 class="text-lg font-bold mb-2">Lugares de Chocolate</h3>
       <ul class="text-sm space-y-1">
-        <li><a href="https://www.hersheys.com" target="_blank" class="hover:underline">Hershey’s World</a></li>
+        <li><a href="https://www.hersheys.com" target="_blank" class="hover:underline">Hershey's World</a></li>
         <li><a href="https://www.lindt.com" target="_blank" class="hover:underline">Lindt Chocolates</a></li>
         <li><a href="https://www.milka.com" target="_blank" class="hover:underline">Milka Village</a></li>
         <li><a href="https://museocacao.com/" target="_blank" class="hover:underline">Museo del Cacao</a></li>
@@ -118,7 +138,7 @@
 
   <!-- Créditos -->
   <div class="text-center text-xs text-purple-200 mt-6">
-    &copy; 2025 Wonka’s Park. Todos los derechos reservados.
+    &copy; 2025 Wonka's Park. Todos los derechos reservados.
   </div>
 </footer>
 
