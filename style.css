@@ -1,0 +1,44 @@
+/* style.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #6b46c1; /* Violeta */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f6ad55; /* Naranja */
+}
+
+.construction-section {
+  background-color: #fefcbf; /* Fondo naranja claro */
+  padding: 4rem 2rem; /* Aumentamos el padding para más espacio */
+  min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical */
+  align-items: center; /* Centrado horizontal */
+  text-align: center;
+}
+
+/* Mantener el footer como estaba */
+footer {
+  background-color: #6b46c1; /* Violeta */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
