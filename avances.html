@@ -17,7 +17,9 @@
 <header class="bg-[#fff5dd] border-b border-[#f0e5cd]">
   <div class="flex flex-wrap items-center justify-between px-6 py-2">
     <!-- Logo -->
-    <h1 class="titulo text-purple-800 text-2xl">WONKA’S PARK</h1>
+    <a href="index.html">
+      <h1 class="titulo text-purple-800 text-2xl cursor-pointer">WONKA’S PARK</h1>
+    </a>
 
     <!-- Botón hamburguesa (solo en mobile) -->
     <button id="menu-btn" class="md:hidden text-purple-800 text-3xl focus:outline-none">
@@ -50,7 +52,7 @@
 
 <!-- HERO ILUSTRADO AJUSTADO -->
 <section class="relative w-full overflow-hidden">
-  <img src="fondo_v1.png" alt="Fondo Wonka" class="w-full h-auto object-cover object-top" />
+  <img src="img/fondo_v1.png" alt="Fondo Wonka" class="w-full h-auto object-cover object-top" />
   
   <!-- Texto posicionado más abajo -->
   <div class="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
@@ -81,7 +83,7 @@
       </div>
 
       <div class="bg-white rounded-2xl shadow-lg p-6 text-center transition hover:-translate-y-2 hover:shadow-2xl">
-        <h3 class="titulo text-xl font-semibold text-[#6635AA] mb-2">🪄 Concepto General</h3>
+        <h3 class="titulo text-xl font-semibold text-[#6635AA] mb-2">🧩 Concepto General</h3>
         <p class="text-gray-700 text-sm">Un sitio colorido e intuitivo que representa la magia del parque. Uso de ilustraciones, secciones dinámicas y navegación sencilla.</p>
       </div>
 
@@ -127,17 +129,29 @@
         </ul>
       </div>
 
-      <div class="bg-white rounded-2xl shadow-lg p-6 text-center transition hover:-translate-y-2 hover:shadow-2xl lg:col-span-2">
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center transition hover:-translate-y-2 hover:shadow-2xl">
         <h3 class="titulo text-xl font-semibold text-[#6635AA] mb-4">🗺️ Mapa del Sitio</h3>
-        <img src="mapa_sitio.png" alt="Mapa del Sitio Web" class="mx-auto w-full max-w-3xl h-auto rounded-md">
-        <p class="text-sm text-gray-600 mt-2">Representación visual de las secciones principales del sitio hasta la actualidad.</p>
+        <p class="text-sm text-gray-600 mt-4">Representación visual de las secciones principales del sitio hasta la actualidad.</p>
+        <img src="img/mapaSitio2.png" alt="Mapa del Sitio Web" class="mx-auto w-full max-w-3xl h-auto rounded-md shadow-md mt-7 transition hover:shadow-lg">
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center transition hover:-translate-y-2 hover:shadow-2xl">
+        <h3 class="titulo text-xl font-semibold text-[#6635AA] mb-4">🚀 Prototipo</h3>
+        <iframe 
+          style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px;" 
+          width="100%" 
+          height="450" 
+          src="https://embed.figma.com/design/g2N1D2pdjUmBGKqW3yy2Oa/Sitio?embed-host=share" 
+          allowfullscreen
+          class="mx-auto max-w-4xl w-full">
+        </iframe>
       </div>
 
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-purple-800 text-white px-6 py-10 mt-10">
+  <footer class="bg-purple-800 text-white px-6 py-10">
     <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <div>
         <h3 class="text-lg font-bold mb-2">Lugares de Chocolate</h3>
